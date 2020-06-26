@@ -1,0 +1,162 @@
+
+David Andrés Bolaños@David MINGW64 ~
+$ cd "/c/Users/David Andrés Bolaños/Documents/Ciencia de datos/Repositorios"
+
+David Andrés Bolaños@David MINGW64 ~/Documents/Ciencia de datos/Repositorios (master)
+$ ls
+
+David Andrés Bolaños@David MINGW64 ~/Documents/Ciencia de datos/Repositorios (master)
+$ ls -la
+total 4
+drwxr-xr-x 1 David Andrés Bolaños 197121 0 may. 20 18:56 ./
+drwxr-xr-x 1 David Andrés Bolaños 197121 0 may. 20 18:37 ../
+drwxr-xr-x 1 David Andrés Bolaños 197121 0 may. 20 18:57 .git/
+
+David Andrés Bolaños@David MINGW64 ~/Documents/Ciencia de datos/Repositorios (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/David Andrés Bolaños/Documents/Ciencia de datos/Repositorios/.git/
+
+David Andrés Bolaños@David MINGW64 ~/Documents/Ciencia de datos/Repositorios (master)
+$ ls -la
+total 4
+drwxr-xr-x 1 David Andrés Bolaños 197121 0 may. 20 18:56 ./
+drwxr-xr-x 1 David Andrés Bolaños 197121 0 may. 20 18:37 ../
+drwxr-xr-x 1 David Andrés Bolaños 197121 0 may. 20 19:08 .git/
+
+David Andrés Bolaños@David MINGW64 ~/Documents/Ciencia de datos/Repositorios (master)
+$ rm -rf .git
+
+David Andrés Bolaños@David MINGW64 ~/Documents/Ciencia de datos/Repositorios
+$ ls -la
+total 0
+drwxr-xr-x 1 David Andrés Bolaños 197121 0 may. 20 19:09 ./
+drwxr-xr-x 1 David Andrés Bolaños 197121 0 may. 20 18:37 ../
+
+David Andrés Bolaños@David MINGW64 ~/Documents/Ciencia de datos/Repositorios
+$ git init
+Initialized empty Git repository in C:/Users/David Andrés Bolaños/Documents/Ciencia de datos/Repositorios/.git/
+
+David Andrés Bolaños@David MINGW64 ~/Documents/Ciencia de datos/Repositorios (ma
+David Andrés Bolaños@David MINGW64 ~/Documents/Ciencia de datos/Repositorios (master)
+$ ls -la
+total 16
+drwxr-xr-x 1 David Andrés Bolaños 197121    0 may. 20 19:24  ./
+drwxr-xr-x 1 David Andrés Bolaños 197121    0 may. 20 18:37  ../
+drwxr-xr-x 1 David Andrés Bolaños 197121    0 may. 20 19:10  .git/
+-rw-r--r-- 1 David Andrés Bolaños 197121 5224 may. 20 19:24 'Primera programación git.txt'
+drwxr-xr-x 1 David Andrés Bolaños 197121    0 may. 20 19:20  PythonDataScienceHandbook/
+
+David Andrés Bolaños@David MINGW64 ~/Documents/Ciencia de datos/Repositorios (master)
+$ git add "Primera programación git.txt"
+
+David Andrés Bolaños@David MINGW64 ~/Documents/Ciencia de datos/Repositorios (master)
+$ git commit -m "Primera prueba según Jupyter"
+[master (root-commit) f891f02] Primera prueba según Jupyter
+ 1 file changed, 105 insertions(+)
+ create mode 100644 "Primera programaci\303\263n git.txt"
+
+David Andrés Bolaños@David MINGW64 ~/Documents/Ciencia de datos/Repositorios (master)
+$ git push origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+David Andrés Bolaños@David MINGW64 ~/Documents/Ciencia de datos/Repositorios (master)
+$ git push origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+David Andrés Bolaños@David MINGW64 ~/Documents/Ciencia de datos/Repositorios (master)
+$ git push "Primera programación git.txt" master
+fatal: invalid gitfile format: Primera programación git.txt
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+David Andrés Bolaños@David MINGW64 ~/Documents/Ciencia de datos/Repositorios (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        PythonDataScienceHandbook/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+David Andrés Bolaños@David MINGW64 ~/Documents/Ciencia de datos/Repositorios (master)
+$ ls -la
+total 17
+drwxr-xr-x 1 David Andrés Bolaños 197121    0 may. 20 19:40  ./
+drwxr-xr-x 1 David Andrés Bolaños 197121    0 may. 20 18:37  ../
+drwxr-xr-x 1 David Andrés Bolaños 197121    0 may. 20 19:39  .git/
+-rw-r--r-- 1 David Andrés Bolaños 197121   25 may. 20 19:40  hello.txt
+-rw-r--r-- 1 David Andrés Bolaños 197121 5224 may. 20 19:24 'Primera programación git.txt'
+drwxr-xr-x 1 David Andrés Bolaños 197121    0 may. 20 19:20  PythonDataScienceHandbook/
+
+David Andrés Bolaños@David MINGW64 ~/Documents/Ciencia de datos/Repositorios (master)
+$ git add hello.txt
+
+David Andrés Bolaños@David MINGW64 ~/Documents/Ciencia de datos/Repositorios (master)
+$ git commit -m "Initial commit"
+[master e52465b] Initial commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello.txt
+
+David Andrés Bolaños@David MINGW64 ~/Documents/Ciencia de datos/Repositorios (master)
+$ git push origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+David Andrés Bolaños@David MINGW64 ~/Documents/Ciencia de datos/Repositorios (master)
+$ git push hello.txt master
+fatal: invalid gitfile format: hello.txt
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+David Andrés Bolaños@David MINGW64 ~/Documents/Ciencia de datos/Repositorios (master)
+$ git push hello
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream hello master
+
+
+David Andrés Bolaños@David MINGW64 ~/Documents/Ciencia de datos/Repositorios (master)
+$ git push --set-upstream hello master
+fatal: 'hello' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+David Andrés Bolaños@David MINGW64 ~/Documents/Ciencia de datos/Repositorios (master)
+$ git push --set-upstream hello.txt master
+fatal: invalid gitfile format: hello.txt
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+David Andrés Bolaños@David MINGW64 ~/Documents/Ciencia de datos/Repositorios (master)
+$ git log
+commit e52465bda83f0a1ead435d588bc58597c76f04dc (HEAD -> master)
+Author: David Andrés Bolaños <david.bolanosg@gmail.com>
+Date:   Wed May 20 19:41:37 2020 -0500
+
+    Initial commit
+
+commit f891f020d72af7ed96393777732570938c7b3aee
+Author: David Andrés Bolaños <david.bolanosg@gmail.com>
+Date:   Wed May 20 19:36:15 2020 -0500
+
+    Primera prueba según Jupyter
